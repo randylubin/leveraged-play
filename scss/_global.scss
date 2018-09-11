@@ -1,0 +1,38 @@
+body {
+  @include body-font;
+  color: #000033;
+  font-size: 1.4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+}
+
+.btn-xl {
+  text-transform: uppercase;
+  padding: 1.5rem 3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.bg-black {
+  background-color: $black !important;
+}
+
+.bg-blue {
+  background-color: #000033 !important;
+}
+
+.rounded-pill {
+  border-radius: 5rem;
+}
+
+.img-cap {
+  max-width: 353px;
+}
