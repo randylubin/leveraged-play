@@ -44,6 +44,14 @@ h6 {
   max-width: 353px;
 }
 
+.text-blue {
+  color: #003;
+}
+
+.text-white {
+  color: #fff;
+}
+
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -69,8 +77,8 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#ffffff));
-  background: linear-gradient(0deg, #ffffff 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#003), to(#67d5e2));
+  background: linear-gradient(0deg, #003 0%, #67d5e2 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -104,7 +112,7 @@ header.masthead .masthead-content .masthead-subheading {
 }
 
 .bg-primary {
-  background-color: #ffffff !important;
+  background-color: #67d5e2 !important;
 }
 
 .display-4 {
@@ -112,31 +120,31 @@ header.masthead .masthead-content .masthead-subheading {
 }
 
 .btn-primary {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: #67d5e2;
+  border-color: #67d5e2;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #e6e6e6 !important;
-  border-color: #e6e6e6 !important;
+  background-color: #3cc9da !important;
+  border-color: #3cc9da !important;
 }
 
 .btn-primary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(103, 213, 226, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(103, 213, 226, 0.5);
 }
 
 .btn-secondary {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: #003;
+  border-color: #003;
 }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  background-color: #e6e6e6 !important;
-  border-color: #e6e6e6 !important;
+  background-color: black !important;
+  border-color: black !important;
 }
 
 .btn-secondary:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 0, 51, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 51, 0.5);
 }
