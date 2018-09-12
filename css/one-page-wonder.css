@@ -77,8 +77,8 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: -webkit-gradient(linear, left bottom, left top, from(#003), to(#67d5e2));
-  background: linear-gradient(0deg, #003 0%, #67d5e2 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#000033), to(#67d5e2));
+  background: linear-gradient(0deg, #000033 0%, #67d5e2 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -135,8 +135,8 @@ header.masthead .masthead-content .masthead-subheading {
 }
 
 .btn-secondary {
-  background-color: #003;
-  border-color: #003;
+  background-color: #000033;
+  border-color: #000033;
 }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
