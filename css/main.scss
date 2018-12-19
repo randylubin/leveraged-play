@@ -26,12 +26,18 @@ h6 {
   font-weight: 800 !important;
 }
 
+h1 {
+  text-align: center;
+}
+
 body {
   font-family: 'Lato', sans-serif;
  }
 
 p {
  font-size: 1.4em;
+ text-align: justify;
+ text-justify: inter-character;
 }
 
 .subsection {
@@ -40,6 +46,15 @@ p {
 
 .section-header {
   margin-top: 4rem;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #1111bb;
 }
 
 p a {
