@@ -1,0 +1,26 @@
+#banner{
+  position: relative;
+  background: url('../img/ice-age.png');
+  background-color: #000050;
+  /* Background pattern from Transparent Textures */
+  min-height: 250px;
+  margin-bottom: 4rem;
+
+  p {
+    font-size: 2em;
+  }
+
+  .primary-overlay{
+    /*background: rgba(0,0,50,.8);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+  .container{
+    padding-top: 1rem;
+  }
+
+  }
+}

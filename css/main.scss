@@ -1,0 +1,51 @@
+---
+---
+
+@import 'bootstrap/bootstrap';
+@import 'custom/includes/header';
+@import 'custom/includes/banner';
+@import 'custom/includes/social_links';
+@import 'custom/includes/posts';
+@import 'custom/includes/pagination';
+@import 'custom/includes/post';
+@import 'solarized-dark';
+@import 'custom/includes/archive';
+
+@import url(//fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900);
+@import url(//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i);
+
+@media (min-width: 768px) { .container { max-width: 800px; } }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Catamaran';
+  font-weight: 800 !important;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+ }
+
+p {
+ font-size: 1.4em;
+}
+
+.subsection {
+  margin-top: 5rem;
+}
+
+.section-header {
+  margin-top: 4rem;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: #000050;
+}

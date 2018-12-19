@@ -1,0 +1,28 @@
+<section id="posts" class="py-5">
+  <div class="container">
+    <h1>Leveraged Play Blog</h1>
+    {% for post in site.posts %}
+      <div class="row subsection">
+        <div class="col">
+            <div>
+              <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+              <p class="text-info lead">
+                {{ post.date | date: "%b %-d, %Y" }}
+              </p>
+
+              <p>
+                {% if post.summary %}
+                  {{ post.summary }}
+                {% else %}
+                  {{ post.excerpt }}
+                {% endif %}
+              </p>
+              <p>
+                <a href="{{ post.url }}" class="text-muted">Read More</a>
+              </p>
+            </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

@@ -1,0 +1,9 @@
+#posts {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $info;
+      text-decoration: underline;
+    }
+  }
+}
