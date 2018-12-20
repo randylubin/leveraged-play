@@ -24,6 +24,7 @@ h5,
 h6 {
   font-family: 'Catamaran';
   font-weight: 800 !important;
+  padding-bottom: 1.5rem;
 }
 
 h1 {
@@ -35,13 +36,13 @@ body {
  }
 
 p {
- font-size: 1.4em;
+ font-size: 1rem;
  text-align: justify;
  text-justify: inter-character;
 }
 
 .subsection {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .section-header {
@@ -49,12 +50,15 @@ p {
 }
 
 .section-title {
-  font-size: 1.75rem;
   text-align: center;
 }
 
+.btn {
+  border-radius: 0!important;
+}
+
 .btn-primary {
-  background-color: #1111bb;
+  background-color: #060677;
 }
 
 p a {
