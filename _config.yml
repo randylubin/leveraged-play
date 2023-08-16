@@ -4,6 +4,7 @@ email: info@leveragedplay.com
 author:
 description:
 url:
+port: 4321
 
 # Build settings
 permalink: :title/
