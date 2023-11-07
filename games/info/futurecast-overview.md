@@ -36,7 +36,7 @@ FutureCast is an in-person workshop game where players explore opportunities and
 
 ### Goal
 
-This collaboration started United Nations Global Pulse, the foresight arm of the UN, approached us to create a game to explore opportunities, threats, and pathways to positive change in the context of elections. The game had to be quick to customize for local contexts, to be easy to facilitate and play, to generate useful insights for the organizer and players, and it had to work with both expert and non-expert players.
+This collaboration started when the United Nations Global Pulse, the foresight arm of the UN, approached us to create a game to explore opportunities, threats, and pathways to positive change in the context of elections. The game had to be quick to customize for local contexts, to be easy to facilitate and play, to generate useful insights for the organizer and players, and it had to work with both expert and non-expert players.
 
 ### Outcome
 
