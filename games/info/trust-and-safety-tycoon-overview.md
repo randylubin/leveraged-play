@@ -1,7 +1,7 @@
 ---
 layout: gameinfo
 title: Leveraged Play | Trust and Safety Tycoon Overview
-description:  is a browser and mobile game that puts the player in charge of managing the trust and safety team at a rapidly growing social network. Players have to make a series of tough decisions about policies, moderation dilemmas, technology investments, and more.
+description: Trust and Safety Tycoon is a browser and mobile game that puts the player in charge of managing the trust and safety team at a rapidly growing social network. Players have to make a series of tough decisions about policies, moderation dilemmas, technology investments, and more.
 permalink: /games/info/trust-and-safety-tycoon-overview.html
 ---
 
