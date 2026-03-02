@@ -1,9 +1,13 @@
-$primary: #05396B; // navy
-$accent: #198754;
-$info: #7f7f7f; // grey
-$grey: #747687;
+// Color palette
+$primary: #1B365D;       // refined deep blue
+$accent: #2A9D8F;        // warm teal
+$highlight: #E9C46A;     // warm gold for CTAs
+$dark: #1A1A2E;          // near-black for body text
+$grey: #6B7280;          // modern mid-grey
+$light-grey: #F3F4F6;    // light section backgrounds
+$off-white: #FAFAFA;     // page background
 
-$code-heading-background: #dededc; // light grey
-$code-text-color: #b6b6b6; // off white
+$code-heading-background: #dededc;
+$code-text-color: #b6b6b6;
 
 $grid-gutter-width: 40px !default;

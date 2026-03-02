@@ -1,18 +1,17 @@
 <!-- NAV -->
-<nav class="navbar navbar-expand-md navbar-light py-4">
+<nav class="navbar navbar-expand-md navbar-light py-3 site-navbar">
   <div class="container">
-    <a href="{{ site.baseurl }}/" class="navbar-brand">
-      <!-- <img src="/img/leveraged-play-logo.svg" style="height: 47px; width: 47px;" alt="Leveraged Play logo"> -->
-      <h3 class="d-inline align-middle pl-3 text-primary nav-logo">Leveraged Play</h3>
+    <a href="{{ site.baseurl }}/" class="navbar-brand d-flex align-items-center">
+      <h3 class="d-inline align-middle mb-0 nav-logo">Leveraged Play</h3>
     </a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ms-auto">
 
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Games</a>
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Games</a>
           <div class="dropdown-menu">
             <a class="dropdown-item" href="{{ site.baseurl }}/games/our-games.html">Our Games</a>
             <a class="dropdown-item" href="{{ site.baseurl }}/games/game-types.html">Types of Games</a>
@@ -30,11 +29,6 @@
           <a href="{{ site.baseurl }}/contact/" class="nav-link">Contact</a>
         </li>
 
-        <!--
-        <li class="nav-item">
-          <a href="{{ site.baseurl }}/blog/" class="nav-link">Blog</a>
-        </li>
-        -->
       </ul>
     </div>
   </div>

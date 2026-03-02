@@ -3,36 +3,114 @@
 
 @import 'custom/_variables.scss';
 
-@import url(//fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900);
-@import url(//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i);
+// ── Typography ──────────────────────────────────────────────
 
-// @media (min-width: 768px) { .container { max-width: 800px; } }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Catamaran';
-  font-weight: 800 !important;
-  padding-bottom: 1.5rem;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Catamaran', sans-serif;
   color: $primary;
+  padding-bottom: 0.75rem;
 }
 
 h1 {
+  font-weight: 800;
   text-align: center;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 600;
 }
 
 body {
   font-family: 'Lato', sans-serif;
- }
+  background-color: $off-white;
+  color: $dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 p {
- font-size: 1rem;
- text-align: justify;
- text-justify: inter-character;
+  font-size: 1rem;
+  line-height: 1.7;
 }
+
+// ── Global transitions ──────────────────────────────────────
+
+a, .btn, .card, .nav-link {
+  transition: all 0.2s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// ── Buttons ─────────────────────────────────────────────────
+
+.btn-primary {
+  background-color: $accent;
+  border-color: $accent;
+  border-radius: 6px;
+  color: #fff;
+
+  &:hover, &:focus {
+    background-color: darken($accent, 8%);
+    border-color: darken($accent, 8%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba($accent, 0.3);
+  }
+}
+
+.btn-secondary {
+  background-color: $accent;
+  border-color: $accent;
+  border-radius: 6px;
+  color: #fff;
+
+  &:hover, &:focus {
+    background-color: darken($accent, 8%);
+    border-color: darken($accent, 8%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba($accent, 0.3);
+  }
+}
+
+.btn-outline-dark {
+  border-radius: 6px;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.btn-light {
+  border-radius: 6px;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+}
+
+// ── Links ───────────────────────────────────────────────────
+
+p a {
+  text-decoration: underline;
+  text-decoration-color: rgba($accent, 0.4);
+  text-underline-offset: 2px;
+  color: $accent;
+}
+
+p a:hover {
+  color: darken($accent, 15%);
+  text-decoration-color: darken($accent, 15%);
+}
+
+// ── Layout helpers ──────────────────────────────────────────
 
 .subsection {
   margin-top: 3rem;
@@ -46,43 +124,78 @@ p {
   text-align: center;
 }
 
-.btn-primary {
-  background-color: #060677;
-}
-
-.btn-secondary {
-  background-color: #0dcaf0; //#198754
-}
-
-p a {
-  text-decoration: underline;
-}
-
-p a:hover {
-  color: #000050;
-}
+// ── Sections ────────────────────────────────────────────────
 
 .section-blue {
   background-color: $primary;
-  color: white !important;
+  color: #fff;
 
   h1, h2, h3, h4 {
-    color: white;
+    color: #fff;
+  }
+
+  p, li, div {
+    color: rgba(255, 255, 255, 0.92);
   }
 }
 
 .section-grey {
-  background-color: $grey;
-  color: white !important;
+  background-color: $light-grey;
+  color: $dark;
 
   h1, h2, h3, h4 {
-    color: white;
+    color: $primary;
   }
 }
+
+.section-clients-heading {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-clients-logo {
+  opacity: 0.4;
+}
+
+// ── Big paragraph (hero tagline) ────────────────────────────
 
 .big-paragraph {
   font-size: 2rem;
   text-align: center;
+}
+
+// ── Cards ───────────────────────────────────────────────────
+
+a.game-card {
+  cursor: pointer;
+}
+
+.card.game-card, a.game-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+
+    .card-img-top {
+      transform: scale(1.03);
+    }
+  }
+
+  .card-img-top {
+    transition: transform 0.3s ease;
+  }
+
+  .card-footer {
+    background: transparent;
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
 }
 
 .card-text {
@@ -90,26 +203,238 @@ p a:hover {
 }
 
 p.card-text {
-  text-align: left !important;
-  text-justify: left !important;
+  text-align: left;
+}
+
+// ── Hero & CTA utility classes ──────────────────────────────
+
+.hero-section {
+  background: linear-gradient(180deg, #DAE2EE 0%, $off-white 100%);
+  padding-top: 3rem;
+  margin-top: -1px;
+}
+
+.hero-heading {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.btn-cta {
+  min-width: 150px;
+}
+
+.about-photo {
+  width: 200px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border: 3px solid $light-grey;
+}
+
+// ── Navbar ──────────────────────────────────────────────────
+
+.site-navbar {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
 .nav-logo {
-  color: $primary !important;
+  color: $primary;
+  font-weight: 700;
 }
 
 .nav-link {
-  color:$primary;
-  font-size: 1.1rem;
+  color: $primary;
+  font-size: 1.05rem;
+  font-weight: 400;
+
+  &:hover {
+    color: $accent;
+  }
+
+  &:not(.dropdown-toggle) {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: $accent;
+      transition: width 0.2s ease, left 0.2s ease;
+    }
+
+    &:hover::after {
+      width: 60%;
+      left: 20%;
+    }
+  }
 }
 
+.dropdown-item:hover {
+  color: $accent;
+  background-color: $light-grey;
+}
+
+// ── Footer ──────────────────────────────────────────────────
+
+.site-footer {
+  background-color: $primary;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 3rem 0 0;
+  margin-top: 3rem;
+
+  .footer-heading {
+    color: #fff;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0;
+  }
+
+  .footer-tagline {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: rgba(255, 255, 255, 0.75);
+      text-decoration: none;
+      font-size: 0.9rem;
+
+      &:hover {
+        color: $highlight;
+      }
+    }
+  }
+
+  .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.85rem;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.6);
+      color: #fff;
+    }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1rem 0;
+  margin-top: 2rem;
+
+  small {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+  }
+}
+
+// ── Section spacing system ───────────────────────────────────
+
+.section {
+  padding: 4rem 0;
+}
+
+.section-sm {
+  padding: 2rem 0;
+}
+
+.section-lg {
+  padding: 6rem 0;
+}
+
+// ── Services list with gold accent markers ──────────────────
+
+.section-blue ul li {
+  padding-left: 0.25rem;
+  margin-bottom: 0.5rem;
+
+  &::marker {
+    color: $highlight;
+  }
+}
+
+// ── Foresight Games community card treatment ────────────────
+
+.community-card {
+  background-color: $light-grey;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+// ── Contact CTA gradient ────────────────────────────────────
+
+.section-cta {
+  background: linear-gradient(135deg, $primary 0%, darken($primary, 8%) 100%);
+  color: #fff;
+
+  h2 {
+    color: #fff;
+  }
+}
+
+// ── Our Games page game entries ─────────────────────────────
+
+.game-entry {
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  padding-bottom: 2rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  img {
+    border-radius: 8px;
+  }
+}
+
+// ── Contact page card ───────────────────────────────────────
+
+.contact-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+// ── Scroll animations ────────────────────────────────────────
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ── Game info pages ─────────────────────────────────────────
+
 .game-info-page {
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    padding-bottom: .5rem;
+  h2, h3, h4, h5, h6 {
+    padding-bottom: 0.5rem;
     margin-bottom: 0;
+  }
+
+  img {
+    border-radius: 8px;
+    margin: 1rem 0;
   }
 }
