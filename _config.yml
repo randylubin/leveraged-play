@@ -1,13 +1,12 @@
-# Site settings
+yaml# Site settings
 title: Leveraged Play
 email: info@leveragedplay.com
 author:
 description:
-url:
+url: "https://leveragedplay.com"
 port: 4321
-
 # Build settings
-permalink: :title/
+permalink: /:title
 sass:
   sass_dir: css
 
