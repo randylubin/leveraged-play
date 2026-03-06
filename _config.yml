@@ -1,4 +1,4 @@
-yaml# Site settings
+# Site settings
 title: Leveraged Play
 email: info@leveragedplay.com
 author:
@@ -6,13 +6,11 @@ description:
 url: "https://leveragedplay.com"
 port: 4321
 # Build settings
-permalink: /:title
+permalink: :title/
 sass:
   sass_dir: css
-
 # Social icons
 show_social_icons: true
 twitter_username: leveragedplay
-
 # Google Analytics
 google_analytics: UA-131149070-1
